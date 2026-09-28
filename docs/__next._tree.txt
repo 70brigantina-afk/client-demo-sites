@@ -1,0 +1,5 @@
+:HL["/client-demo-sites/_next/static/css/7079aada69907083.css","style"]
+:HL["/client-demo-sites/images/education.webp","image"]
+:HL["/client-demo-sites/images/padel.webp","image"]
+:HL["/client-demo-sites/images/ralf.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"211BEu8QAwz6N8vaaK9jP"}
