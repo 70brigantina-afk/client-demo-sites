@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ремонт кофемашин — персональная демо-концепция лендинга</title>
+<meta name="description" content="Демонстрационная концепция современного лендинга для услуги ремонта кофемашин: структура, форма заявки, мобильная версия и SEO-основа.">
+<style>
+:root{--bg:#f3eee8;--ink:#1d1b18;--muted:#6e665d;--card:#fffdf9;--accent:#a64626;--accent2:#d7a06b;--line:#d9d0c6;--dark:#171512}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.5}
+a{color:inherit}.demo{font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--dark);color:#fff;padding:9px 24px;text-align:center}
+header{position:sticky;top:0;z-index:20;background:rgba(243,238,232,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;height:72px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:900;letter-spacing:-.03em;font-size:20px;text-decoration:none}.brand span{color:var(--accent)}
+nav{display:flex;gap:24px;font-size:14px}nav a{text-decoration:none;color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:white;text-decoration:none;border:0;border-radius:999px;padding:14px 20px;font-weight:750;cursor:pointer}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.hero{max-width:1180px;margin:auto;padding:56px 24px 36px;display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+.kicker{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.13em;color:var(--accent)}
+h1{font-size:clamp(44px,7vw,86px);line-height:.94;letter-spacing:-.065em;margin:14px 0 24px}.lead{font-size:20px;max-width:620px;color:var(--muted);margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.micro{margin-top:20px;font-size:13px;color:var(--muted)}
+.photo{border-radius:28px;overflow:hidden;position:relative;box-shadow:0 30px 70px rgba(40,24,14,.17);aspect-ratio:4/3;background:#ddd}.photo img{width:100%;height:100%;object-fit:cover;display:block}.badge{position:absolute;left:18px;bottom:18px;right:18px;background:rgba(20,18,16,.82);backdrop-filter:blur(8px);color:#fff;padding:12px 15px;border-radius:14px;font-size:12px}
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 24px}.stripin{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;font-size:14px}.strip strong{display:block;font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+section{max-width:1180px;margin:auto;padding:88px 24px}.sectionhead{display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:end;margin-bottom:38px}h2{font-size:clamp(36px,5vw,62px);letter-spacing:-.05em;line-height:1;margin:8px 0}.sectionhead p{color:var(--muted);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);padding:28px;border-radius:22px;border:1px solid #e9e0d7;min-height:240px}.n{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.12em}.card h3{font-size:25px;line-height:1.1;margin:45px 0 10px}.card p{color:var(--muted);margin:0}.card em{font-size:12px;color:var(--accent);font-style:normal;display:block;margin-top:18px}
+.dark{max-width:none;background:var(--dark);color:#fff}.darkin{max-width:1180px;margin:auto;padding:88px 24px;display:grid;grid-template-columns:.9fr 1.1fr;gap:50px}.dark h2{margin-top:10px}.steps{display:grid;gap:12px}.step{border:1px solid #37322d;border-radius:18px;padding:20px;display:grid;grid-template-columns:42px 1fr;gap:14px}.step i{font-style:normal;color:var(--accent2);font-weight:900}.step p{margin:4px 0 0;color:#bdb5ac}
+.formwrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}.formbox{background:var(--card);border-radius:26px;padding:30px;border:1px solid #e8ded4}label{display:block;font-size:13px;font-weight:700;margin:14px 0 6px}input,select,textarea{width:100%;padding:14px 15px;border:1px solid var(--line);border-radius:12px;background:white;font:inherit}textarea{min-height:100px;resize:vertical}.formnote{font-size:12px;color:var(--muted);margin-top:12px}.success{display:none;margin-top:14px;padding:13px;border-radius:12px;background:#edf4ea;color:#295729}
+.faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:750;font-size:18px}details p{color:var(--muted);max-width:780px}
+footer{background:#e7ded4;padding:30px 24px;color:var(--muted)}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;font-size:13px}
+@media(max-width:850px){nav{display:none}.hero,.sectionhead,.darkin,.formwrap{grid-template-columns:1fr}.hero{padding-top:36px}.photo{order:-1}.cards{grid-template-columns:1fr}.stripin{grid-template-columns:1fr}.darkin{padding-top:70px;padding-bottom:70px}section{padding-top:70px;padding-bottom:70px}.nav{height:64px}.nav>.btn{padding:11px 14px}.foot{flex-direction:column}h1{font-size:50px}}
+@media(max-width:460px){.hero,section,.darkin{padding-left:16px;padding-right:16px}.nav{padding:0 16px}.demo{padding-left:12px;padding-right:12px}.actions .btn{width:100%}.photo{border-radius:20px}.card{padding:22px}}
+</style>
+</head>
+<body>
+<div class="demo">Персональная демонстрационная концепция · не является действующим сайтом сервиса</div>
+<header><div class="nav">
+<a class="brand" href="#">COFFEE<span>CARE</span> / концепция</a>
+<nav><a href="#services">Услуги</a><a href="#process">Как работает</a><a href="#request">Заявка</a><a href="#faq">Вопросы</a></nav>
+<a class="btn" href="#request">Описать проблему ↗</a>
+</div></header>
+
+<main>
+<div class="hero">
+<div>
+<div class="kicker">Лендинг для ремонта кофемашин</div>
+<h1>Кофе снова<br>должен быть<br>кофе.</h1>
+<p class="lead">Современная посадочная страница, которая быстро объясняет услугу, снимает базовые вопросы и ведёт посетителя к понятному действию — описать неисправность.</p>
+<div class="actions"><a class="btn" href="#request">Описать неисправность ↗</a><a class="btn alt" href="#process">Как устроен путь клиента</a></div>
+<p class="micro">Город, реальные цены, марки кофемашин, сроки, гарантии и контакты намеренно не придуманы — их нужно заполнить после получения данных заказчика.</p>
+</div>
+<div class="photo">
+<img alt="Концептуальный визуал: мастер обслуживает кофемашину" src="data:image/jpeg;base64,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[... truncated for brevity ...]/9k=">
+<div class="badge">Концептуальный AI-визуал для демонстрации дизайна. Не фотография мастерской заказчика.</div>
+</div>
+</div>
+
+<div class="strip"><div class="stripin">
+<div><strong>01 / Понятная услуга</strong>Посетитель сразу понимает, куда попал и что делать дальше.</div>
+<div><strong>02 / Mobile first</strong>Крупные CTA и удобная форма рассчитаны в том числе на телефон.</div>
+<div><strong>03 / Под рекламу</strong>Структура предусматривает Метрику, цели и дальнейший запуск Директа.</div>
+</div></div>
+
+<section id="services">
+<div class="sectionhead"><div><div class="kicker">Что будет на сайте</div><h2>Не «визитка», а путь к заявке.</h2></div><p>Вместо длинного полотна — блоки, которые отвечают на вопросы по порядку: что чините, как проходит работа, сколько это стоит, как связаться. Реальные данные подставляются после получения прайса и материалов.</p></div>
+<div class="cards">
+<article class="card"><div class="n">01 / УСЛУГИ</div><h3>Понятный каталог работ</h3><p>Отдельные карточки под реальные направления ремонта, которые подтвердит заказчик.</p><em>Названия и состав услуг — после прайса.</em></article>
+<article class="card"><div class="n">02 / ЦЕНЫ</div><h3>Без «цена от потолка»</h3><p>Тарифы и стоимость работ показываются только после получения актуального прайса.</p><em>В демо цены намеренно не выдуманы.</em></article>
+<article class="card"><div class="n">03 / ДОВЕРИЕ</div><h3>Фото, факты, гарантии</h3><p>Реальные фотографии, условия гарантии и подтверждённые преимущества займут место абстрактных обещаний.</p><em>Никаких фиктивных отзывов и цифр.</em></article>
+</div>
+</section>
+
+<div id="process" class="dark"><div class="darkin">
+<div><div class="kicker">Сценарий клиента</div><h2>Четыре шага без лишнего трения.</h2><p style="color:#bdb5ac;max-width:520px">Такой сценарий удобно дополнять Яндекс Метрикой: видеть переход к форме, клики по контактам и отправку заявки.</p></div>
+<div class="steps">
+<div class="step"><i>01</i><div><b>Человек узнаёт свою проблему</b><p>На первом экране — конкретная услуга и сильный CTA.</p></div></div>
+<div class="step"><i>02</i><div><b>Сверяет услуги и условия</b><p>Без перегруза: только то, что влияет на решение.</p></div></div>
+<div class="step"><i>03</i><div><b>Понимает следующий шаг</b><p>Можно описать неисправность и оставить удобный способ связи.</p></div></div>
+<div class="step"><i>04</i><div><b>Заявка уходит мастеру</b><p>В рабочей версии подключается почта/CRM/мессенджер и цели Метрики.</p></div></div>
+</div>
+</div></div>
+
+<section id="request">
+<div class="formwrap">
+<div><div class="kicker">Демонстрационный сценарий</div><h2>Опишите, что случилось с кофемашиной.</h2><p class="lead" style="font-size:17px">Форма показывает будущую механику. Сейчас она не собирает и не отправляет персональные данные.</p></div>
+<div class="formbox">
+<form id="demoform">
+<label for="issue">Что произошло?</label><select id="issue"><option>Выберите вариант</option><option>Кофемашина не включается</option><option>Не подаёт воду / кофе</option><option>Появился необычный шум</option><option>Другая неисправность</option></select>
+<label for="model">Модель кофемашины</label><input id="model" placeholder="Например: укажу после согласования">
+<label for="note">Комментарий</label><textarea id="note" placeholder="Коротко опишите проблему"></textarea>
+<button class="btn" style="width:100%;margin-top:16px" type="submit">Проверить сценарий ↗</button>
+<div class="formnote">Демонстрация. Данные никуда не отправляются и не сохраняются.</div>
+<div id="success" class="success">Готово: сценарий формы работает. В рабочей версии здесь будет передача заявки в согласованный канал.</div>
+</form>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="kicker">Перед запуском</div><h2>Что нужно получить от заказчика.</h2>
+<div class="faq">
+<details open><summary>Какие данные ещё нужны?</summary><p>Город и зона выезда, реальные контакты, список услуг, марки/типы кофемашин, цены, сроки, условия гарантии, фотографии и правила обработки заявок.</p></details>
+<details><summary>Что можно подключить после согласования?</summary><p>Домен, Яндекс Метрику и цели, отправку форм на почту или в CRM/мессенджер, юридические документы и cookie-уведомление.</p></details>
+<details><summary>Это уже полноценная запись?</summary><p>Нет. Сейчас показан только демонстрационный сценарий заявки. Реальная отправка и обработка данных подключаются отдельно.</p></details>
+</div>
+</section>
+</main>
+
+<footer><div class="foot"><div>COFFEECARE / персональная концепция · noindex, nofollow</div><div>Визуал, структура и тексты подготовлены как демонстрация; фактические данные требуют подтверждения заказчика.</div></div></footer>
+<script>
+document.getElementById('demoform').addEventListener('submit',function(e){e.preventDefault();document.getElementById('success').style.display='block';document.getElementById('success').scrollIntoView({behavior:'smooth',block:'nearest'})});
+</script>
+</body></html>
