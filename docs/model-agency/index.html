@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Model Agency — персональная демо-концепция лендинга</title>
+<meta name="description" content="Демонстрационная концепция премиального лендинга для модельного агентства.">
+<style>
+:root{--ivory:#f1ede7;--ink:#11100f;--taupe:#8d8279;--line:#cfc7be;--paper:#faf8f4;--sand:#c8a88e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.demo{background:#111;color:#fff;text-align:center;padding:9px 16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}.nav{height:78px;max-width:1280px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.logo{text-decoration:none;font-weight:900;font-size:23px;letter-spacing:-.04em}.logo span{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe);margin-top:2px}.nav nav{display:flex;gap:26px}.nav nav a{text-decoration:none;color:#4d4742;font-size:14px}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;background:#111;color:#fff;padding:13px 18px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+.hero{position:relative;height:730px;overflow:hidden;background:#111}.hero img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.7) contrast(1.04)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.38) 42%,rgba(0,0,0,.08) 68%,rgba(0,0,0,0) 100%)}.hero-copy{position:absolute;z-index:2;left:max(28px,calc((100vw - 1224px)/2));top:50%;transform:translateY(-50%);width:min(620px,48vw);color:#fff}.eyebrow{font-size:12px;letter-spacing:.17em;text-transform:uppercase;font-weight:800}.hero h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(62px,7vw,110px);line-height:.88;letter-spacing:-.06em;margin:16px 0 24px}.hero h1 em{font-weight:400;color:#ead8ca}.hero p{max-width:560px;font-size:20px;line-height:1.55;color:#eee8e2}.caption{font-size:11px!important;color:#ddd3ca!important;margin-top:18px!important}
+.wrap{max-width:1224px;margin:auto;padding:108px 28px}.intro{display:grid;grid-template-columns:.7fr 1.3fr;gap:72px}.intro h2,.section-head h2,.cast h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(44px,5vw,76px);line-height:.98;letter-spacing:-.045em;margin:12px 0 22px}.intro p,.section-head p,.cast p{font-size:18px;color:#6e665f;line-height:1.72;max-width:700px}.small{display:block;margin-top:14px;font-size:12px;color:var(--taupe)}.rule{border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:end;margin-bottom:38px}.service-lines{border-top:1px solid var(--line)}.service-lines article{display:grid;grid-template-columns:72px 1fr 1fr 110px;gap:24px;align-items:center;padding:27px 0;border-bottom:1px solid var(--line)}.service-lines .num{font-size:12px;letter-spacing:.15em;color:#9c7256}.service-lines h3{font-family:Georgia,serif;font-size:32px;font-weight:500;margin:0}.service-lines p{color:#6e665f;line-height:1.55;margin:0}.textlink{font-size:13px;font-weight:800;text-decoration:none;text-align:right}
+.visual{position:relative;height:570px;overflow:hidden;background:#111}.visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.65)}.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.12),rgba(0,0,0,.64))}.visual-copy{position:absolute;z-index:2;right:max(28px,calc((100vw - 1224px)/2));top:50%;transform:translateY(-50%);width:min(530px,44vw);color:#fff}.visual-copy h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(48px,5.2vw,78px);line-height:.94;letter-spacing:-.05em;margin:12px 0 20px}.visual-copy p{font-size:18px;line-height:1.62;color:#ede5df}.cast{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}.formbox{background:var(--paper);border:1px solid #ddd5cc;padding:34px}.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}.choice{border:1px solid var(--line);background:#fff;padding:14px;text-align:left;cursor:pointer;font:inherit}.choice.active{background:#e9e0d8;border-color:#111}.formbox label{display:block;font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;margin:18px 0 7px}.formbox input,.formbox textarea{width:100%;padding:14px;border:1px solid var(--line);background:#fff;font:inherit}.formbox textarea{min-height:110px;resize:vertical}.form-note{font-size:12px;color:var(--taupe);line-height:1.5}.success{display:none;margin-top:14px;padding:13px;background:#e7eee5;font-size:13px}.faq{border-top:1px solid var(--line)}details{padding:20px 0;border-bottom:1px solid var(--line)}summary{font-family:Georgia,serif;font-size:22px;cursor:pointer}details p{color:#6e665f;max-width:820px;line-height:1.65}.footer{background:#111;color:#d9d0c8;padding:34px 28px}.footer-inner{max-width:1224px;margin:auto;display:flex;justify-content:space-between;gap:28px;font-size:12px}
+@media(max-width:900px){.nav nav{display:none}.hero{height:660px}.hero-copy{width:auto;right:24px}.intro,.section-head,.cast{grid-template-columns:1fr;gap:28px}.service-lines article{grid-template-columns:48px 1fr}.service-lines p,.service-lines .textlink{grid-column:2;text-align:left}.visual-copy{left:24px;right:24px;width:auto}.choice-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.nav{padding:0 16px;height:68px}.nav-cta{display:none}.hero{height:610px}.hero-copy{left:18px;right:18px}.hero h1{font-size:55px}.hero p{font-size:17px}.wrap{padding:76px 18px}.intro h2,.section-head h2,.cast h2,.visual-copy h2{font-size:44px}.choice-grid{grid-template-columns:1fr}.formbox{padding:22px}.visual{height:520px}.footer-inner{flex-direction:column}.logo{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="demo">Персональная демо-концепция · не официальный сайт агентства</div>
+<header class="nav">
+<a class="logo" href="#">MODEL / AGENCY<span>editorial concept</span></a>
+<nav><a href="#approach">О подходе</a><a href="#services">Направления</a><a href="#cast">Заявка</a><a href="#faq">Вопросы</a></nav>
+<a class="nav-cta" href="#cast">Стать моделью ↗</a>
+</header>
+
+<main>
+<section class="hero">
+<img src="https://images.pexels.com/photos/31321356/pexels-photo-31321356.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Редакционная fashion-фотография моделей в студии">
+<div class="hero-copy">
+<span class="eyebrow">Модельное агентство / концепция</span>
+<h1>Лицо.<br><em>Характер.<br>История.</em></h1>
+<p>Премиальный лендинг, который показывает уровень агентства ещё до первого сообщения и ведёт посетителя к понятному действию — кастингу или запросу на модель.</p>
+<a class="btn" href="#cast">Оставить заявку ↗</a>
+<p class="caption">Иллюстративная стоковая фотография для демонстрации дизайна. Не модели заказчика.</p>
+</div>
+</section>
+
+<section id="approach" class="wrap">
+<div class="intro">
+<div><span class="eyebrow">Style / Presence / Selection</span><span class="small">Предлагаемая визуальная система</span></div>
+<div><h2>Агентство должно<br>выглядеть как агентство.</h2><p>Не как набор шаблонных блоков, а как редакционный digital‑проект: крупный визуал, воздух, сильная типографика, минимум лишнего и ясный сценарий для двух аудиторий — моделей и клиентов.</p></div>
+</div>
+</section>
+
+<section id="services" class="wrap rule">
+<div class="section-head">
+<div><span class="eyebrow">Структура лендинга</span><h2>Две аудитории.<br><em>Один бренд.</em></h2></div>
+<p>Без данных заказчика я не придумываю города, имена моделей, бренды клиентов и коммерческие условия. Здесь показана именно дизайн‑логика и путь пользователя.</p>
+</div>
+<div class="service-lines">
+<article><span class="num">01</span><h3>Для моделей</h3><p>Кастинг, требования, этапы отбора и понятная заявка — после получения реальных условий агентства.</p><a href="#cast" class="textlink">К кастингу ↗</a></article>
+<article><span class="num">02</span><h3>Для брендов</h3><p>Подбор модели под съёмку, рекламу, каталог или мероприятие — с отдельным коммерческим CTA.</p><a href="#cast" class="textlink">Запросить подбор ↗</a></article>
+<article><span class="num">03</span><h3>Портфолио</h3><p>В рабочей версии здесь размещаются реальные лица агентства, параметры и подтверждённые проекты.</p><a href="#cast" class="textlink">Обсудить ↗</a></article>
+</div>
+</section>
+
+<section class="visual">
+<img src="https://images.pexels.com/photos/13522074/pexels-photo-13522074.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Fashion-съёмка моделей в студии">
+<div class="visual-copy">
+<span class="eyebrow">Редакционная подача</span>
+<h2>Не каталог.<br>Образ бренда.</h2>
+<p>Визуальный язык построен так, чтобы агентство выглядело собранно и дорого даже до загрузки полного модельного портфолио.</p>
+</div>
+</section>
+
+<section id="cast" class="wrap">
+<div class="cast">
+<div><span class="eyebrow">Демонстрационный сценарий</span><h2>Какой у вас запрос?</h2><p>Один экран — два понятных пути. Реальная форма после согласования может отправлять заявки в почту, Telegram или CRM.</p></div>
+<div class="formbox">
+<div class="choice-grid">
+<button class="choice active" type="button">Хочу стать моделью</button>
+<button class="choice" type="button">Нужны модели для проекта</button>
+</div>
+<form id="demoform">
+<label for="name">Как к вам обращаться</label><input id="name" placeholder="Имя">
+<label for="message">Коротко о запросе</label><textarea id="message" placeholder="Например: хочу узнать условия кастинга"></textarea>
+<button class="btn" style="width:100%;margin-top:18px" type="submit">Продолжить ↗</button>
+<p class="form-note">Демонстрация. Данные не сохраняются и никуда не отправляются.</p>
+<div class="success" id="success">Сценарий работает. В рабочей версии здесь подключается выбранный канал заявок и цели Яндекс Метрики.</div>
+</form>
+</div>
+</div>
+</section>
+
+<section id="faq" class="wrap rule">
+<span class="eyebrow">Перед запуском</span>
+<h2 style="font-family:Georgia,serif;font-weight:500;font-size:clamp(44px,5vw,72px);letter-spacing:-.045em;margin:12px 0 28px">Что нужно от заказчика.</h2>
+<div class="faq">
+<details open><summary>Что заменить на реальные данные?</summary><p>Название агентства, город, модельный состав, условия кастинга, услуги для брендов, кейсы, контакты, фото и юридическую информацию.</p></details>
+<details><summary>Можно ли сделать на Tilda?</summary><p>Да, эта визуальная система рассчитана на лендинг и может быть перенесена в Zero Block с отдельной адаптацией под планшет и мобильные разрешения.</p></details>
+<details><summary>Это уже рабочая заявка?</summary><p>Нет. Сейчас показана только интерактивная демонстрация. Реальная отправка данных подключается после согласования.</p></details>
+</div>
+</section>
+</main>
+
+<footer class="footer"><div class="footer-inner"><div>MODEL / AGENCY · демонстрационная версия · noindex, nofollow</div><div>Визуалы используются только для демонстрации концепции и не являются портфолио заказчика.</div></div></footer>
+
+<script>
+document.querySelectorAll('.choice').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.choice').forEach(x=>x.classList.remove('active'));b.classList.add('active')}));
+document.getElementById('demoform').addEventListener('submit',e=>{e.preventDefault();document.getElementById('success').style.display='block'});
+</script>
+</body></html>
